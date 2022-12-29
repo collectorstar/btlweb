@@ -1,0 +1,60 @@
+#new {
+  width: 100%;
+  min-height: 500px;
+  margin-top: 24px;
+  padding: 15px 0;
+}
+
+.container-new {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.title-new {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 170%;
+  text-transform: uppercase;
+  color: #001e42;
+  margin-bottom: 36px;
+}
+.date-and-society {
+  display: flex;
+}
+.date-new {
+  flex: 0 0 75%;
+  max-width: 75%;
+  font-size: 15px;
+  line-height: 22px;
+  color: #002147;
+  margin-bottom: 24px;
+}
+.date-new span {
+  color: #999;
+  margin-left: 10px;
+}
+.date-new span i {
+  margin-right: 5px;
+}
+
+.society-new {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.society-new a {
+  text-decoration: none;
+  float: right;
+}
+.social-item {
+  font-size: 16px;
+  color: #fff;
+  width: 11px;
+  height: 11px;
+  padding: 6px;
+  margin-right: 8px;
+  background: #eeeeee;
+  border-radius: 50%;
+  border: 1px solid #e5e5e5;
+}
+.social-item:hover {
+  background: #007dff;
+}

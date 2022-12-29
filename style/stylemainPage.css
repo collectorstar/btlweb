@@ -1,0 +1,369 @@
+/* slide */
+#slide {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.info-title-slide {
+  display: none;
+  position: relative;
+  width: 100%;
+}
+
+.img-slide {
+  width: 100%;
+}
+
+.content-slide-info {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.title-slide {
+  font-weight: 550;
+  color: #fff;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  max-width: 600px;
+  font-size: 35px;
+  line-height: 50px;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.slide-more-info {
+  padding: 10px 25px;
+  color: #fff;
+  background-color: #e4aa0b;
+  border-radius: 3px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 24px;
+  border: 1px solid #e4aa0b;
+}
+
+.arrow-slide {
+  position: absolute;
+  top: 40%;
+  right: 20px;
+  left: 20px;
+  z-index: 1;
+}
+.arrow-slide button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.arrow-slide button:hover {
+  opacity: 1;
+}
+.slide-more-info:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.dotSlide {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activeSlide,
+.dotSlide:hover {
+  background-color: #a30713;
+}
+
+/* quick-nav */
+#quick-nav {
+  width: 100%;
+  height: 123.2px;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.quick-nav-mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.quick-nav-item {
+  text-decoration: none;
+  text-align: center;
+  height: 98.2px;
+  width: 142px;
+}
+.quick-nav-item img {
+  width: 35px;
+}
+.quick-nav-item p {
+  color: #001e42;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+.quick-nav-item:hover .quick-nav-text {
+  color: #a60713;
+}
+
+/* hot-new */
+#hot-new {
+  padding-top: 25px;
+  padding-bottom: 15px;
+  background-color: #eee;
+}
+.container-hot-new {
+  position: relative;
+  max-width: 1140px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content-hot-new {
+  display: flex;
+  justify-content: space-between;
+}
+.hot-new-item {
+  display: block;
+  width: 320px;
+  padding: 10px 25px;
+  text-decoration: none;
+  background-color: #eee;
+}
+.img-hot-new {
+  width: 320px;
+}
+.img-hot-new img {
+  width: 320px;
+  height: 182px;
+}
+.desc-hot-new {
+  width: 320px;
+  height: 100px;
+}
+.desc-hot-new h3 {
+  color: #064084ed;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.arrow-hot-new {
+  top: 40%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: -20px;
+  right: -20px;
+}
+
+.arrow-hot-new button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.arrow-hot-new button img {
+  width: 40px;
+  opacity: 0.85;
+}
+.btn-hot-new:hover img {
+  opacity: 1;
+}
+
+/* news*/
+#news {
+  padding: 48px 0;
+}
+.container-news {
+  display: flex;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.content-news {
+  position: relative;
+  max-width: 50%;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.title-list-news {
+  text-decoration: none;
+  color: #001e42;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.item-news {
+  display: flex;
+  padding: 15px 0;
+}
+.img-item-news {
+  display: block;
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+  padding-right: 15px;
+}
+.img-item-news img {
+  max-width: 100%;
+}
+.title-news {
+  text-decoration: none;
+  padding: 0 15px;
+  color: #002a5c;
+  font-size: 17px;
+  font-weight: 600;
+}
+.more-news {
+  position: absolute;
+  right: 10px;
+  padding: 5px 10px;
+}
+.more-news:hover a {
+  color: red;
+}
+.more-news a {
+  color: #002a5c;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: capitalize;
+}
+
+/* criteria */
+#criteria {
+  padding-top: 32px;
+  width: 100%;
+}
+.container-criteria {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.title-criteria {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 48px;
+  margin-bottom: 8px;
+}
+.title-criteria h2 {
+  text-transform: uppercase;
+  color: #002a5c;
+  font-size: 28px;
+  font-weight: bolder;
+}
+.content-criteria {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.item-content-criteria {
+  height: 180px;
+  width: 33.33333%;
+  flex: 1 1 auto !important;
+  display: block;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  color: #002a5c;
+  text-align: center;
+  text-decoration: none;
+}
+.item-content-criteria h3 {
+  max-height: 100px;
+  text-align: center;
+  padding: 0 15px;
+  margin-bottom: 8px;
+}
+.item-content-criteria p {
+  text-transform: uppercase;
+  padding-right: 15px;
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.item-content-criteria p .fa-star {
+  color: yellow;
+  font-size: 30px;
+  padding: 5px;
+}
+
+/* partner */
+#partner {
+  width: 100%;
+  padding: 15px 0;
+}
+.container-partner {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.title-partner {
+  padding: 10px;
+}
+.title-partner h2 {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 28px;
+  color: #002a5c;
+}
+
+.content-partner {
+  position: relative;
+  width: 100%;
+}
+
+.ads-partner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.item-partner {
+  display: block;
+  width: 155px;
+  padding: 0 15px;
+}
+.item-partner img {
+  width: 100%;
+}
+.arrow-partner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+  text-align: center;
+}
+.arrow-partner button {
+  height: 24px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+.arrow-partner button img {
+  height: 20px;
+  opacity: 0.85;
+}
+.arrow-partner button:hover img {
+  opacity: 1;
+}

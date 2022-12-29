@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/stylemain.css">
+    <link rel="stylesheet" href="./style/stylemainPage.css" />
+    <link
+      rel="stylesheet"
+      href="./style/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.css"
+    />
+    <title>VŨ ĐỨC DUY - BTL WEB - mainPage</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header"></div>
+
+      <div id="nav"></div>
+
+      <div id="slide">
+        <!-- 1 -->
+        <div class="info-title-slide">
+          <img src="./img/slide/1.jpg" alt="" class="img-slide" />
+          <div class="content-slide-info">
+            <a class="title-slide">
+              Bộ Giáo dục và Đào tạo nói về lợi thế của sinh viên 4 trường đại
+              học đạt chuẩn kiểm định quốc tế
+            </a>
+            <a href="" class="slide-more-info">Xem thêm</a>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="info-title-slide">
+          <img src="./img/slide/2.jpg" alt="" class="img-slide" />
+          <div class="content-slide-info">
+            <a class="title-slide">
+              Thông báo kết quả xét tuyển thẳng Đại học chính quy năm 2022
+            </a>
+            <a href="" class="slide-more-info">Xem thêm</a>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="info-title-slide">
+          <img src="./img/slide/3.jpg" alt="" class="img-slide" />
+          <div class="content-slide-info">
+            <a class="title-slide">
+              Thông báo về việc đăng ký xét tuyển vào Đại học chính quy năm 2022
+            </a>
+            <a href="" class="slide-more-info">Xem thêm</a>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="info-title-slide">
+          <img src="./img/slide/4.jpg" alt="" class="img-slide" />
+          <div class="content-slide-info">
+            <a class="title-slide">
+              Thông báo về việc xét tuyển thẳng, ưu tiên xét tuyển kết hợp vào
+              đại học chính quy năm 2022
+            </a>
+            <a href="" class="slide-more-info">Xem thêm</a>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="info-title-slide">
+          <img src="./img/slide/5.jpg" alt="" class="img-slide" />
+          <div class="content-slide-info">
+            <a class="title-slide">
+              Thông báo kết quả thi Vẽ Mỹ thuật năm 2022
+            </a>
+            <a href="" class="slide-more-info">Xem thêm</a>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="info-title-slide">
+          <img src="./img/slide/6.jpg" alt="" class="img-slide" />
+          <div class="content-slide-info">
+            <a class="title-slide">
+              Đề án tuyển sinh trình độ đại học năm 2022
+            </a>
+            <a href="" class="slide-more-info">Xem thêm</a>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="info-title-slide">
+          <img src="./img/slide/7.jpg" alt="" class="img-slide" />
+          <div class="content-slide-info">
+            <a class="title-slide">
+              Quy chế và hướng dẫn tuyển sinh Đại học chính quy năm 2022 của bộ
+              GD&ĐT
+            </a>
+            <a href="" class="slide-more-info">Xem thêm</a>
+          </div>
+        </div>
+
+        <!-- arrow -->
+        <div class="arrow-slide">
+          <button class="float-left" onclick="pushSlide(-1)">
+            <img src="./img/slide/left-arrow.svg" alt="" />
+          </button>
+
+          <button class="arr-right float-right" onclick="pushSlide(1)">
+            <img src="./img/slide/right-arrow.svg" alt="" />
+          </button>
+
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div style="text-align: center">
+        <span class="dotSlide" onclick="SlideCurrent(1)"></span>
+        <span class="dotSlide" onclick="SlideCurrent(2)"></span>
+        <span class="dotSlide" onclick="SlideCurrent(3)"></span>
+        <span class="dotSlide" onclick="SlideCurrent(4)"></span>
+        <span class="dotSlide" onclick="SlideCurrent(5)"></span>
+        <span class="dotSlide" onclick="SlideCurrent(6)"></span>
+        <span class="dotSlide" onclick="SlideCurrent(7)"></span>
+      </div>
+
+      <div id="quick-nav">
+        <div class="quick-nav-mid">
+          <a href="" class="quick-nav-item">
+            <img
+              src="./img/quick-nav/thong-tin-tuyen-sinh.svg"
+              alt=""
+              class="quick-nav-img"
+            />
+            <p class="quick-nav-text">THÔNG TIN TUYỂN SINH</p>
+          </a>
+          <a href="" class="quick-nav-item">
+            <img
+              src="./img/quick-nav/dang-ky-online.svg"
+              alt=""
+              class="quick-nav-img"
+            />
+            <p class="quick-nav-text">ĐĂNG KÝ ONLINE</p>
+          </a>
+          <a href="" class="quick-nav-item">
+            <img
+              src="./img/quick-nav/nganh-chuyen-nganh-tuyen-sinh.svg"
+              alt=""
+              class="quick-nav-img"
+            />
+            <p class="quick-nav-text">
+              NGÀNH <br />
+              CHUYÊN NGÀNH <br />
+              TUYỂN SINH
+            </p>
+          </a>
+          <a href="" class="quick-nav-item">
+            <img
+              src="./img/quick-nav/diem-trung-tuyen-dai-hoc.svg"
+              alt=""
+              class="quick-nav-img"
+            />
+            <p class="quick-nav-text">
+              ĐIỂM <br />
+              TRÚNG TUYỂN <br />
+              ĐẠI HỌC
+            </p>
+          </a>
+          <a href="" class="quick-nav-item">
+            <img
+              src="./img/quick-nav/hoc-phi.svg"
+              alt=""
+              class="quick-nav-img"
+            />
+            <p class="quick-nav-text">HỌC PHÍ</p>
+          </a>
+          <a href="" class="quick-nav-item">
+            <img
+              src="./img/quick-nav/hoc-bong.svg"
+              alt=""
+              class="quick-nav-img"
+            />
+            <p class="quick-nav-text">HỌC BỔNG</p>
+          </a>
+          <a href="" class="quick-nav-item">
+            <img
+              src="./img/quick-nav/hoi-dap.svg"
+              alt=""
+              class="quick-nav-img"
+            />
+            <p class="quick-nav-text">HỎI ĐÁP</p>
+          </a>
+        </div>
+      </div>
+
+      <div id="hot-new">
+        <div class="container-hot-new">
+          <div class="content-hot-new">
+            <!-- 1 -->
+            <a href="" class="hot-new-item">
+              <div class="img-hot-new">
+                <img src="./img/hot-new/1.jpg" alt="" />
+              </div>
+              <div class="desc-hot-new">
+                <h3>
+                  Thông báo tuyển sinh trình độ ĐH hình thức vừa làm vừa học năm
+                  2022
+                </h3>
+              </div>
+            </a>
+
+            <!-- 2 -->
+            <a href="" class="hot-new-item">
+              <div class="img-hot-new">
+                <img src="./img/hot-new/2.jpg" alt="" />
+              </div>
+              <div class="desc-hot-new">
+                <h3>
+                  Kết quả trúng tuyển vào các chương trình hội nhập và quốc tế
+                  khoá 67
+                </h3>
+              </div>
+            </a>
+
+            <!-- 3 -->
+            <a href="" class="hot-new-item">
+              <div class="img-hot-new">
+                <img src="./img/hot-new/3.jpeg" alt="" />
+              </div>
+              <div class="desc-hot-new">
+                <h3>
+                  Thông báo chỉ tiêu và đối tượng xét tuyển vào các chương trình
+                  đào tạo hội nhập và quốc tế năm 2022
+                </h3>
+              </div>
+            </a>
+
+            <!-- 4 -->
+            <a href="" class="hot-new-item">
+              <div class="img-hot-new">
+                <img src="./img/hot-new/4.jpeg" alt="" />
+              </div>
+              <div class="desc-hot-new">
+                <h3>
+                  Thông báo kết quả xét tuyển đại học chính quy năm 2022 và kế
+                  hoạch nhập học
+                </h3>
+              </div>
+            </a>
+
+            <!-- 5 -->
+            <a href="" class="hot-new-item">
+              <div class="img-hot-new">
+                <img src="./img/hot-new/5.jpeg" alt="" />
+              </div>
+              <div class="desc-hot-new">
+                <h3>
+                  Thông báo về việc nộp lệ phí đăng ký xét tuyển đại học chính
+                  quy năm 2022
+                </h3>
+              </div>
+            </a>
+
+            <!-- 6 -->
+            <a href="" class="hot-new-item">
+              <div class="img-hot-new">
+                <img src="./img/hot-new/6.jpeg" alt="" />
+              </div>
+              <div class="desc-hot-new">
+                <h3>Thông báo ngưỡng đầu vào đại học chính quy năm 2022</h3>
+              </div>
+            </a>
+
+            <!-- 7 -->
+            <a href="" class="hot-new-item">
+              <div class="img-hot-new">
+                <img src="./img/hot-new/7.jpeg" alt="" />
+              </div>
+              <div class="desc-hot-new">
+                <h3>
+                  Thông báo về việc đăng ký xét tuyển vào đại học chính quy năm
+                  2022
+                </h3>
+              </div>
+            </a>
+
+            <!-- 8 -->
+            <a href="" class="hot-new-item">
+              <div class="img-hot-new">
+                <img src="./img/hot-new/8.jpeg" alt="" />
+              </div>
+              <div class="desc-hot-new">
+                <h3>Thông báo tuyển sinh đại học chính quy năm 2022</h3>
+              </div>
+            </a>
+
+            <!-- 9 -->
+            <a href="" class="hot-new-item">
+              <div class="img-hot-new">
+                <img src="./img/hot-new/9.jpeg" alt="" />
+              </div>
+              <div class="desc-hot-new">
+                <h3>
+                  Thông báo về việc xét tuyển thẳng, ưu tiên xét tuyển và xét
+                  tuyển kết hợp vào đại học chính quy năm 2022
+                </h3>
+              </div>
+            </a>
+
+            <!-- 10 -->
+            <a href="" class="hot-new-item">
+              <div class="img-hot-new">
+                <img src="./img/hot-new/10.jpeg" alt="" />
+              </div>
+              <div class="desc-hot-new">
+                <h3>Đề án tuyển sinh trình độ đại học năm 2022</h3>
+              </div>
+            </a>
+          </div>
+          <div class="arrow-hot-new">
+            <button
+              class="btn-hot-new arrow-hot-new-left float-left"
+              onclick="pushHotnew(-1)"
+            >
+              <img class="" src="./img/slide/left-arrow.svg" alt="" />
+            </button>
+            <button
+              class="btn-hot-new arrow-hot-new-right float-right"
+              onclick="pushHotnew(1)"
+            >
+              <img class="" src="./img/slide/right-arrow.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="news">
+        <div class="container-news">
+          <div class="content-news">
+            <a href="" class="title-list-news">TIN TỨC ĐẠI HỌC</a>
+            <div class="list-news">
+              <div class="item-news">
+                <a href="./index3.html" class="img-item-news">
+                  <img src="./img/news/news_1/1.jpg" alt="" />
+                </a>
+                <a href="./index3.html" class="title-news">
+                  Hướng dẫn nam sinh viên khóa 67 đăng ký di chuyển nghĩa vụ
+                  quân sự
+                </a>
+              </div>
+
+              <div class="item-news">
+                <a href="" class="img-item-news">
+                  <img src="./img/news/news_1/2.png" alt="" />
+                </a>
+                <a href="" class="title-news">
+                  Đề nghị kiểm tra trạng thái Xác nhận nhập học ĐH Chính quy
+                  2022
+                </a>
+              </div>
+
+              <div class="item-news">
+                <a href="" class="img-item-news">
+                  <img src="./img/news/news_1/3.jpg" alt="" />
+                </a>
+                <a href="" class="title-news">
+                  Tra cứu điểm trúng tuyển Đại học Xây dựng Hà Nội 2022
+                </a>
+              </div>
+
+              <div class="item-news">
+                <a href="" class="img-item-news">
+                  <img src="./img/news/news_1/4.jpg" alt="" />
+                </a>
+                <a href="" class="title-news">
+                  Mô hình Đào tạo Đại học theo khung trình độ quốc gia Việt Nam
+                  của Trường Đại học Xây dựng Hà Nội
+                </a>
+              </div>
+
+              <div class="item-news">
+                <a href="" class="img-item-news">
+                  <img src="./img/news/news_1/5.jpg" alt="" />
+                </a>
+                <a href="" class="title-news">
+                  Thông báo tuyển sinh trình độ ĐH hình thức vừa làm vừa học
+                  2022
+                </a>
+              </div>
+
+              <div class="more-news">
+                <a href="./index2.html">
+                  <i class="fa-solid fa-chevron-right"></i>
+                  Xem thêm
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-news">
+            <a href="" class="title-list-news">TIN TỨC SAU ĐẠI HỌC</a>
+            <div class="list-news">
+              <div class="item-news">
+                <a href="" class="img-item-news">
+                  <img src="./img/news/news_2/1.jpg" alt="" />
+                </a>
+                <a href="" class="title-news">
+                  THÔNG BÁO Tuyển sinh đào tạo trình độ tiến sĩ đợt tháng 12 năm
+                  2022
+                </a>
+              </div>
+
+              <div class="item-news">
+                <a href="" class="img-item-news">
+                  <img src="./img/news/news_2/2.jpg" alt="" />
+                </a>
+                <a href="" class="title-news">
+                  THÔNG BÁO Tuyển sinh đào tạo trình độ thạc sĩ đợt tháng 12 năm
+                  2022
+                </a>
+              </div>
+
+              <div class="item-news">
+                <a href="" class="img-item-news">
+                  <img src="./img/news/news_2/3.png" alt="" />
+                </a>
+                <a href="" class="title-news">
+                  THÔNG BÁO Tuyển sinh đào tạo trình độ thạc sĩ cho các thí sinh
+                  tốt nghiệp chương trình PFIEV Đợt tháng 12 năm 2022
+                </a>
+              </div>
+
+              <div class="item-news">
+                <a href="" class="img-item-news">
+                  <img src="./img/news/news_2/4.jpg" alt="" />
+                </a>
+                <a href="" class="title-news">
+                  THÔNG BÁO học bổ sung ngoại ngữ đạt năng lực bậc 3 và bậc 4
+                </a>
+              </div>
+
+              <div class="item-news">
+                <a href="" class="img-item-news">
+                  <img src="./img/news/news_2/5.jpg" alt="" />
+                </a>
+                <a href="" class="title-news">
+                  THÔNG BÁO Tuyển sinh trình độ thạc sĩ đợt tháng 6 năm 2022
+                </a>
+              </div>
+
+              <div class="more-news">
+                <a href="">
+                  <i class="fa-solid fa-chevron-right"></i>
+                  Xem thêm
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="criteria">
+        <div class="container-criteria">
+          <a href="" class="title-criteria">
+            <h2>Tại sao chọn Trường Đại học Xây dựng Hà Nội</h2>
+          </a>
+          <div class="content-criteria">
+            <a href="" class="item-content-criteria">
+              <h3>
+                <img src="./img/criteria/1.png" style="width: 100px" alt="" />
+              </h3>
+              <p>Cơ sở giáo dục Đại học đạt chuẩn kiểm định Quốc tế</p>
+            </a>
+
+            <a href="" class="item-content-criteria">
+              <h3>
+                <img src="./img/criteria/2.png" style="width: 220px" alt="" />
+              </h3>
+              <p>
+                Cơ sở giáo dục Đại học đạt chuẩn<br />
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </p>
+            </a>
+
+            <a href="" class="item-content-criteria">
+              <h3 style="font-size: 60px; padding-bottom: 32px">
+                > <span class="count">65</span>
+              </h3>
+              <p>Năm Đào tạo</p>
+            </a>
+
+            <a href="" class="item-content-criteria">
+              <h3 style="font-size: 60px">> <span class="count">45</span></h3>
+              <p>Ngành/Chuyên ngành đào tạo trình độ Đại học</p>
+            </a>
+
+            <a href="" class="item-content-criteria">
+              <h3 style="font-size: 60px">> <span class="count">25</span></h3>
+              <p>Ngành/Chuyên ngành đào tạo trình độ Thạc sĩ</p>
+            </a>
+
+            <a href="" class="item-content-criteria">
+              <h3 style="font-size: 60px">> <span class="count">19</span></h3>
+              <p>Ngành/Chuyên ngành đào tạo trình độ Tiến sĩ</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="partner">
+        <div class="container-partner">
+          <div class="title-partner">
+            <h2>ĐỐI TÁC</h2>
+          </div>
+          <div class="content-partner">
+            <div class="ads-partner">
+              <!-- 1 -->
+              <a href="" class="item-partner">
+                <img src="./img/partner/1.jpg" alt="" />
+              </a>
+              <!-- 2 -->
+              <a href="" class="item-partner">
+                <img src="./img/partner/2.png" alt="" />
+              </a>
+              <!-- 3 -->
+              <a href="" class="item-partner">
+                <img src="./img/partner/3.jpg" alt="" />
+              </a>
+              <!-- 4 -->
+              <a href="" class="item-partner">
+                <img src="./img/partner/4.jpg" alt="" />
+              </a>
+              <!-- 5 -->
+              <a href="" class="item-partner">
+                <img src="./img/partner/5.jpg" alt="" />
+              </a>
+              <!-- 6 -->
+              <a href="" class="item-partner">
+                <img src="./img/partner/6.jpg" alt="" />
+              </a>
+              <!-- 7 -->
+              <a href="" class="item-partner">
+                <img src="./img/partner/7.jpg" alt="" />
+              </a>
+              <!-- 8 -->
+              <a href="" class="item-partner">
+                <img src="./img/partner/8.jpg" alt="" />
+              </a>
+              <!-- 9 -->
+              <a href="" class="item-partner">
+                <img src="./img/partner/9.jpg" alt="" />
+              </a>
+              <!-- 10 -->
+              <a href="" class="item-partner">
+                <img src="./img/partner/10.jpg" alt="" />
+              </a>
+            </div>
+            <div class="arrow-partner">
+              <button class="float-left" onclick="pushPartner(-1)">
+                <img src="./img/partner/r.svg" alt="" />
+              </button>
+              <button class="float-right" onclick="pushPartner(1)">
+                <img src="./img/partner/l.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer"></div>
+
+      <div id="about-me"></div>
+    </div>
+    <script src="./js/render.js"></script>
+    <script src="./js/mainPage.js"></script>
+  </body>
+</html>
