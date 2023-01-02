@@ -127,7 +127,6 @@ function pushPartner(n) {
   if (partnerIndex == 0) {
     partnerIndex = partners.length - 5
   }
-  console.log(partnerIndex)
   partners[partnerIndex - 1].style.display = "block";
   partners[partnerIndex].style.display = "block";
   partners[partnerIndex + 1].style.display = "block";
@@ -211,24 +210,3 @@ function runCount4() {
     clearInterval(count4)
   }
 }
-
-//nghich
-function findDuplicate(nums) {
-  let tortoise = nums[0]
-  let hare = nums[0]
-  while (true) {
-    tortoise = nums[tortoise]
-    hare = nums[nums[hare]]
-    if (tortoise == hare) break
-  }
-  let ptr1 = nums[0]
-  let ptr2 = tortoise
-  while (ptr1 != ptr2) {
-    ptr1 = nums[ptr1]
-    ptr2 = nums[ptr2]
-  }
-  return ptr1
-}
-
-console.log(findDuplicate([0, 0, 0, 0, 0, 1]))
-// cho 1 mang nums chua n+1 so nguyen, moi so nguyen nam trong doan 1->n .gia su co 1 so bi lap lai, co the nhieu hon 1 lan. tim so bi lap lai
