@@ -318,6 +318,6 @@ nav.innerHTML = `
 var category = document.querySelector("#category");
 category.innerHTML = `
 <div class="container-category">
-          <h2>tin tức đại học</h2>
-        </div>
+  <h2>tin tức đại học</h2>
+</div>
 `;
