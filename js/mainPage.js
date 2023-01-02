@@ -1,3 +1,27 @@
+//input search
+var inputsearch = document.getElementsByClassName("input-search")[0];
+var headerSearch = document.getElementsByClassName("headerSearch")[0];
+var searchclick = 0
+
+inputsearch.style.border = 0
+inputsearch.style.padding = 0
+inputsearch.style.width = 0
+searchclick = 1
+
+function clicksearch() {
+  if (searchclick == 0) {
+    inputsearch.style.border = 0
+    inputsearch.style.padding = 0
+    inputsearch.style.width = 0
+    searchclick = 1
+    inputsearch.value = ""
+  }
+  else {
+    inputsearch.style = "width: 306px;height: 36px;border-radius: 50px;padding: 0 20px;"
+    searchclick = 0
+  }
+}
+
 //slide
 var slides = document.getElementsByClassName("info-title-slide");
 var dots = document.getElementsByClassName("dotSlide");
@@ -63,8 +87,8 @@ function pushHotnew(n) {
   if (hotNewIndex == hotNews.length - 1) {
     hotNewIndex = 1;
   }
-  if(hotNewIndex==0){
-    hotNewIndex = hotNews.length-2
+  if (hotNewIndex == 0) {
+    hotNewIndex = hotNews.length - 2
   }
   hotNews[hotNewIndex - 1].style.display = "block";
   hotNews[hotNewIndex].style.display = "block";
@@ -97,11 +121,11 @@ function supportPartner() {
 function pushPartner(n) {
   supportPartner();
   partnerIndex += n;
-  if (partnerIndex == (partners.length -4)) {
+  if (partnerIndex == (partners.length - 4)) {
     partnerIndex = 1;
   }
-  if(partnerIndex==0){
-    partnerIndex = partners.length-5
+  if (partnerIndex == 0) {
+    partnerIndex = partners.length - 5
   }
   console.log(partnerIndex)
   partners[partnerIndex - 1].style.display = "block";
@@ -144,7 +168,7 @@ function runCount1() {
     a++;
     count[0].innerText = a;
   }
-  else{
+  else {
     clearInterval(count1)
   }
 }
@@ -157,7 +181,7 @@ function runCount2() {
     a++;
     count[1].innerText = a;
   }
-  else{
+  else {
     clearInterval(count2)
   }
 }
@@ -170,7 +194,7 @@ function runCount3() {
     a++;
     count[2].innerText = a;
   }
-  else{
+  else {
     clearInterval(count3)
   }
 }
@@ -183,28 +207,28 @@ function runCount4() {
     a++;
     count[3].innerText = a;
   }
-  else{
+  else {
     clearInterval(count4)
   }
 }
 
 //nghich
-function findDuplicate(nums){
+function findDuplicate(nums) {
   let tortoise = nums[0]
   let hare = nums[0]
-  while(true){
+  while (true) {
     tortoise = nums[tortoise]
     hare = nums[nums[hare]]
-    if(tortoise==hare) break
+    if (tortoise == hare) break
   }
   let ptr1 = nums[0]
   let ptr2 = tortoise
-  while(ptr1!=ptr2){
+  while (ptr1 != ptr2) {
     ptr1 = nums[ptr1]
     ptr2 = nums[ptr2]
   }
   return ptr1
 }
 
-console.log(findDuplicate([0,0,0,0,0,1]))
+console.log(findDuplicate([0, 0, 0, 0, 0, 1]))
 // cho 1 mang nums chua n+1 so nguyen, moi so nguyen nam trong doan 1->n .gia su co 1 so bi lap lai, co the nhieu hon 1 lan. tim so bi lap lai

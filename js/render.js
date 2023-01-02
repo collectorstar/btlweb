@@ -1,35 +1,38 @@
 var header = document.querySelector("#header");
 header.innerHTML = `
 <div class="mid-header">
-          <a href="./index.html" class="brand">
-            <img src="./img/header/logo.png" alt="" class="float-left" />
-            <div class="logo-text">
-              <h3>TRƯỜNG ĐẠI HỌC XÂY DỰNG HÀ NỘI</h3>
-              <h4>TRANG THÔNG TIN TUYỂN SINH</h4>
-            </div>
-          </a>
-          <ul class="float-right right-menu">
-            <li class="float-left">
-              <a class="right-menu-box" href="">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <p>Tìm kiêm</p>
-              </a>
-            </li>
-            <li class="float-left">
-              <a class="right-menu-box" href="">
-                <i class="fa-solid fa-building-columns"></i>
-                <p>HUCE</p>
-              </a>
-            </li>
-            <li class="float-left trans-red">
-              <a class="right-menu-box" href="">
-                <i class="fa-sharp fa-solid fa-user"></i>
-                <p>Đăng Nhập</p>
-              </a>
-            </li>
-          </ul>
-          <div class="clear"></div>
-        </div>
+<a href="./index.html" class="brand">
+  <img src="./img/header/logo.png" alt="" class="float-left" />
+  <div class="logo-text">
+    <h3>TRƯỜNG ĐẠI HỌC XÂY DỰNG HÀ NỘI</h3>
+    <h4>TRANG THÔNG TIN TUYỂN SINH</h4>
+  </div>
+</a>
+<ul class="float-right right-menu">
+  <li class="float-left">
+    <input class="input-search" type="text" name="" id="" placeholder="Nhập từ khóa">
+  </li>
+  <li class="float-left">
+    <a class="right-menu-box headerSearch" style="cursor: pointer;" onclick="clicksearch()">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <p>Tìm kiếm</p>
+    </a>
+  </li>
+  <li class="float-left">
+    <a class="right-menu-box" href="">
+      <i class="fa-solid fa-building-columns"></i>
+      <p>HUCE</p>
+    </a>
+  </li>
+  <li class="float-left trans-red">
+    <a class="right-menu-box" href="">
+      <i class="fa-sharp fa-solid fa-user"></i>
+      <p>Đăng Nhập</p>
+    </a>
+  </li>
+</ul>
+<div class="clear"></div>
+</div>
 `;
 
 var footer = document.querySelector("#footer");

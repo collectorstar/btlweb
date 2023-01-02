@@ -106,6 +106,17 @@ body {
   color: #a30713;
 }
 
+.input-search{
+  display: block;
+  width: 306px;
+  height: 36px;
+  border-radius: 50px;
+  color: #29313a;
+  padding: 0 20px;
+  outline: none;
+  font-size: 14px;
+}
+
 /* nav */
 #nav {
   position: sticky;
