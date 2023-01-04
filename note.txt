@@ -1,0 +1,11 @@
+vũ đức duy - 65IT1 - 57665
+trang chủ - index.html
+trang list - index2.html
+trang tin chi tiết - index3.html
+
+từ trang chủ ấn "xem thêm" của phần tin tức đại học để vào trang list
+từ trang chủ ấn ngay tin đầu tiên để vào phần trang tin chi tiết
+
+từ trang list ấn tin đầu tiên để vào trang tin chi tiết
+
+từ trang list và trang tin chi tiết ấn tên trường trên phần header hoặc hình logo ngôi nhà trên nav để trở về trang chủ
